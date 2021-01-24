@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(201, 199, 206);
+    font-family: 'imbue';
+}
+
+header {
+    text-align: center;
+    background-color: rgb(54, 52, 52);
+    padding: 2rem;
+}
+
+
+#logo {
+    color: rgb(103, 139, 173);
+}
+
