@@ -12,7 +12,7 @@ body {
 header {
     text-align: center;
     background-color: rgb(54, 52, 52);
-    padding: 2rem;
+    padding: 2rem 0 8rem;
 }
 
 
@@ -20,3 +20,107 @@ header {
     color: rgb(103, 139, 173);
 }
 
+
+/*main----------*/
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+/* Titles ------ */
+h2 {
+    margin-top: 3.0rem;
+    margin-bottom: 0.8rem;
+    color: rgb(66, 64, 64);
+    font-weight: normal;
+}
+
+/*section--------*/
+#balance {
+    margin-top: -6rem;
+}
+
+#balance h2{
+    color: rgb(217, 226, 243);
+    margin-top: 0%;
+}
+
+
+/*cards---------*/
+.card {
+    background-color: whitesmoke;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    color: rgb(54, 52, 52)
+}
+.card h3 {
+    font-weight: normal;
+    font-size: 1rem;
+    
+}
+
+.card p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.card.total {
+    background-color: rgb(92, 190, 46);
+    color:whitesmoke;
+}
+
+/*data-table------------*/
+#data-table {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+table th {
+    background-color: rgb(231, 234, 240);
+    opacity: 0.6rem;
+    color: rgb(110, 107, 107);
+    padding: 1rem 2rem;
+    text-align: left;
+    border-radius: 0.3rem 0 0.3rem 0;
+}
+table tbody tr  {
+    opacity: 0.7
+}
+
+table tr:hover{
+    opacity:1 
+}
+
+table td {
+    background-color: rgb(231, 234, 240);
+    padding: 1rem 2rem;
+    text-align: left;
+    border-radius: 0.2rem 0 0.2rem 0;
+}
+
+td.description {
+    color:rgb(0, 0, 0) ;
+}
+
+td.income{
+    color:rgb(24, 189, 24)
+}
+
+td.expense{
+    color: red;
+}
+
+td.date {
+    color: rgb(82, 70, 250);
+}
+
+/*roda pé----------*/
+footer {
+    text-align: center;
+    padding: 2rem 0 1rem;
+    opacity: 0.5;
+    color: rgb(21, 20, 29);
+} 
