@@ -11,27 +11,36 @@
 <body>
       
         <header>
-            <h1 id="logo">Control Finance$</h1>
+            <img src="assets/logo.svg" alt="logo Dev Finance">
         </header>
         
     
     <main class="container">
-        
-            <section id="balance">
-                <h2>Balanço</h2>
+            
+            <section id="balance">        
+                <h2 class="sr-only">Balanço</h2>
 
                     <div class="card">
-                        <h3>Entradas</h3>
+                        <h3>
+                            <span>Entradas</span>
+                            <img src="assets/income.svg" alt="Imagem de entradas">
+                        </h3>
                         <p>R$ 5.000,00</p>
                     </div>
                     
                     <div class="card">
-                        <h3>Saidas</h3>
+                        <h3>
+                            <span>Saidas</span>
+                            <img src="assets/minus.svg" alt="Imagem de saidas">
+                        </h3>
                         <p>R$2.000,00</p>
                     </div>
                    
                     <div class="card total">
-                        <h3>Total</h3>
+                        <h3>
+                            <span>Total</span>
+                            <img src="assets/total.svg" alt="Imagem total">
+                        </h3>
                         <p>R$3.000,00</p>
                     </div>
             
@@ -39,13 +48,18 @@
         
     
             <section id="transactions">
-                <h2>Transações</h2>
+                <h2 class="sr-only">Transações</h2>
+                <a href="#" class="button new">+Nova Transação </a>
+                    
                     <table id="data-table">
                         <thead>
                                 <tr>
                                     <th>Descrição</th>
                                     <th>Valor</th>
                                     <th>Data</th>
+                                    <th>
+                                        <img src="assets/expense.svg" alt="imagem de sinal de menos">
+                                    </th>
                                 </tr>
                         </thead>
                        
@@ -54,21 +68,52 @@
                                     <td class="description">Luz</td>
                                     <td class="expense">-R$500,00</td>
                                     <td class="date">23/01/2021</td>
+                                    <td>
+                                        <img src="assets/minus.svg" alt="imagem sinal de menos">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="description">Criação de Website</td>
                                     <td class="income">R$5.000,00</td>
                                     <td class="date">24/01/2021</td>
+                                    <td>
+                                        <img src="assets/plus.svg" alt="">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="description">Aluguel</td>
                                     <td class="expense">-R$1.500,00</td>
                                     <td class="date">26/01/2021</td>
+                                    <td>
+                                        <img src="assets/minus.svg" alt="imagem sinal de menos">
+                                    </td>
                                 </tr>
                         </tbody>
                     </table>
             </section>
     </main>
+   
+    <div class="modal-overlay active">
+        <div class="modal">
+            <div id="form">
+                <h2>Nova Transação</h2>
+                <form action="">
+                    <div class="input-group">
+                        <label class="sr-only" for="description">Descrição</label>
+                        <input type="text" id="description" name="description"
+                        placeholder="Descrição">
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="amount">Descrição</label>
+                        <input type="number" id="amount" name="amount"
+                        placeholder="Descrição">
+                    </div>
+                </form>
+            </div>
+        </div>
+               
+    </div>
 
 <footer><p>Control Finance$</p></footer>
 </body>
