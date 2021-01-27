@@ -14,7 +14,7 @@
             <img src="assets/logo.svg" alt="logo Dev Finance">
         </header>
         
-    
+    <!--balanço e transações somente leitores de tela-->
     <main class="container">
             
             <section id="balance">        
@@ -58,7 +58,7 @@
                                     <th>Valor</th>
                                     <th>Data</th>
                                     <th>
-                                        <img src="assets/expense.svg" alt="imagem de sinal de menos">
+                                       
                                     </th>
                                 </tr>
                         </thead>
@@ -93,7 +93,7 @@
             </section>
     </main>
    
-    <!---
+    <!--aba de nova transação-->
     <div class="modal-overlay active">
         <div class="modal">
             <div id="form">
@@ -106,16 +106,27 @@
                     </div>
 
                     <div class="input-group">
-                        <label class="sr-only" for="amount">Descrição</label>
+                        <label class="sr-only" for="amount">Valor</label>
                         <input type="number" id="amount" name="amount"
-                        placeholder="Descrição">
+                        step="0.01"
+                        placeholder="0,00">
+                        <small class="Help">Use o sinal - (negativo) para despesas e , (virgula) para casas decimais</small>
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="date">Descrição</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="input-group actions">
+                        <a href="#" class="button cancel">cancelar</a>
+                        <button>Salvar</button>
                     </div>
                 </form>
             </div>
         </div>
-               --->
+               
     </div>
-
+<!--roda pé-->
 <footer><p><img src="assets/logo.svg" alt=""></p></footer>
 </body>
 </html>
